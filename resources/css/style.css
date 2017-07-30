@@ -1,0 +1,102 @@
+/* Base settings */
+html {
+  font-size: 18px;
+  color: white;
+
+}
+
+body {
+  font-family: Helvetica;
+  line-height: 1.4em;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Header section */
+header {
+
+}
+
+.banner {
+  text-transform: uppercase;
+  background-color: black;
+}
+
+.banner .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.66rem 0 0.66rem 0.5rem;
+}
+
+.banner img {
+  height: 1.5rem
+}
+
+.banner h1 {
+  display: inline;
+  margin-left: 1rem;
+
+}
+
+.promo  {
+
+  height: 25rem;
+  width: auto;
+  background-image: url("../images/moto.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.promo-text {
+  width: 20rem;
+  background-color: black;
+  position: relative;
+  top: 9rem;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+
+}
+
+.promo-text h2 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+  line-height: 1.4em;
+}
+
+.promo-text h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  background-color: firebrick;
+  padding: 0.75rem 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Main section */
+
+
+/* Footer section */
+footer {
+  background-color: black;
+  padding: 5rem;
+}
