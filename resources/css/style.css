@@ -79,19 +79,6 @@ nav.mobile {
   display: none;
 }
 
-@media only screen and (max-width: 1024px) {
-  nav.mobile {
-    display: block;
-  }
-
-  nav.desktop {
-    display: none;
-  }
-
-  nav li {
-    margin: 0 auto;
-  }
-}
 nav li {
   display: inline;
 }
@@ -109,6 +96,39 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav.mobile {
+    display: block;
+  }
+
+  nav.desktop {
+    display: none;
+  }
+
+  nav li {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .promo {
+    height: 15rem;
+  }
+  .promo-text {
+    top: 10rem;
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+  .promo-text h2 {
+    font-size: 0.77rem;
+    margin-bottom: 0;
+  }
+
+  .promo-text h3 {
+    font-size: 1rem;
+  }
 }
 
 /* Main section */
@@ -139,7 +159,6 @@ nav ul {
   height: auto;
   width: auto;
   display: block;
-
 }
 
 .gallery h2 {
@@ -148,20 +167,11 @@ nav ul {
   padding: 0.5rem;
 }
 
-@media only screen and (max-width: 1024px) {
-  .glasses {
-    display: none;
-  }
-  .product {
-    width: 47%;
-  }
-}
-
-}
 .location-hours {
   display: flex;
   justify-content: space-between;
   margin-bottom: 4rem;
+
 }
 
 .location,
@@ -178,6 +188,15 @@ nav ul {
     background-color: black;
 }
 
+@media only screen and (max-width: 1024px) {
+  .glasses {
+    display: none;
+  }
+  .product {
+    width: 47%;
+  }
+}
+
 @media only screen and (max-width: 470px) {
   .watch {
     display: none;
@@ -188,6 +207,10 @@ nav ul {
     margin: 0 auto;
   }
 
+  .location {
+    margin-bottom: 0.5rem;
+  }
+
   .location-hours {
     flex-wrap: wrap;
   }
@@ -195,8 +218,17 @@ nav ul {
   .gallery {
     justify-content: center;
   }
+}
+
 /* Footer section */
 footer {
   background-color: black;
   padding: 5rem;
+}
+
+@media only screen and (max-width: 470px) {
+  footer {
+    padding: 5rem 0;
+    text-align: center;
+  }
 }
