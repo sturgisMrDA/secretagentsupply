@@ -2,13 +2,19 @@
 html {
   font-size: 18px;
   color: white;
+}
 
+@media only screen and (max-width: 1024px)  {
+  html {
+    font-size: 16px;
+  }
 }
 
 body {
   font-family: Helvetica;
   line-height: 1.4em;
 }
+
 .container,
 main {
   max-width: 960px;
@@ -16,10 +22,6 @@ main {
 }
 
 /* Header section */
-header {
-
-}
-
 .banner {
   text-transform: uppercase;
   background-color: black;
@@ -73,7 +75,23 @@ header {
   font-weight: bold;
   line-height: 1.2em;
 }
+nav.mobile {
+  display: none;
+}
 
+@media only screen and (max-width: 1024px) {
+  nav.mobile {
+    display: block;
+  }
+
+  nav.desktop {
+    display: none;
+  }
+
+  nav li {
+    margin: 0 auto;
+  }
+}
 nav li {
   display: inline;
 }
@@ -130,6 +148,16 @@ nav ul {
   padding: 0.5rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  .glasses {
+    display: none;
+  }
+  .product {
+    width: 47%;
+  }
+}
+
+}
 .location-hours {
   display: flex;
   justify-content: space-between;
@@ -149,6 +177,24 @@ nav ul {
     padding: 1rem 2rem;
     background-color: black;
 }
+
+@media only screen and (max-width: 470px) {
+  .watch {
+    display: none;
+  }
+
+  .product, .location, .hours {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .location-hours {
+    flex-wrap: wrap;
+  }
+
+  .gallery {
+    justify-content: center;
+  }
 /* Footer section */
 footer {
   background-color: black;
